@@ -7,6 +7,9 @@ $btn-primary-bg: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
 $main-cards-bg: rgba(255, 255, 255, 0.1);
 $transparent-btn-bg:rgba(255, 255, 255, 0.5);
 
+html {
+  scroll-behavior: smooth !important;
+}
 
 // globals
 body {
@@ -334,5 +337,13 @@ footer {
 
   footer {
     text-align: center !important;
+  }
+
+  #collection {
+    .collection-buttons {
+      .nav-item {
+        padding: 0 3px;
+      }
+    }
   }
 }
