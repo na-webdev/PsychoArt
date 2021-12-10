@@ -1,0 +1,332 @@
+// fonts 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@700&display=swap');
+
+// variables
+$body-bg: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%);
+$btn-primary-bg: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+$main-cards-bg: rgba(255, 255, 255, 0.1);
+$transparent-btn-bg:rgba(255, 255, 255, 0.5);
+
+
+// globals
+body {
+  background: $body-bg;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF80;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 100px 120px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color:  rgba(255, 255, 255, 0.1);;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-primary {
+  background-image: $btn-primary-bg;
+}
+
+.w-7 {
+  font-weight: 700;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 40px;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+  p {
+    margin: 0;
+  }
+  .card-body {
+    padding: 20px 0 0;
+  }
+  .btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+// scrollbar design 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $body-bg;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $btn-primary-bg;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+// header 
+
+header {
+  background-color: #673B3C;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  .container {
+    padding: 10px 60px;
+    .navbrand-image {
+      width: 133px;
+    }
+    input {
+      margin-left: 40px;
+      border: none !important;
+      outline: none;
+      color: #FFFFFF80;
+      border-radius: 10px;
+      padding: 5px 40px;
+      display: inline-block;
+      width: 15%;
+      background-image: url(../img/search.png);
+      background-repeat: no-repeat;
+      background-color: rgba(255, 255, 255, 0.1);
+      background-size: 15px;
+      background-position: 15px 9px;
+    }
+
+    li {
+      margin-right: 30px;
+    }
+  
+    .input-group-text {
+      margin-right: 0;
+    }
+  
+    input::placeholder {
+      color: #FFFFFF80;
+    }
+
+    a {
+      color: #FFFFFF !important;
+    }
+  }
+}
+
+#hero {
+  .container {
+    padding: 150px 120px 60px;
+    .hero-left {
+      padding-right: 50px;
+    }
+    .hero-title {
+      font-size: 50px;
+      color: white;
+    }
+
+    .gallary {
+      img {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+
+    .hero-buttons {
+      button:first-child {
+        margin-right: 20px;
+      }
+    }
+
+    .stat {
+      margin-top: 40px;
+      .text-white {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+#collection {
+  .collection-buttons {
+    .nav-item {
+      padding: 0 7.5px;
+    }
+    .btn {
+      width: 100%;
+      padding: 5px;
+      color: white;
+      transition: 0.3s;
+      &:hover {
+        background-image: $btn-primary-bg;
+      }
+    }
+
+    .active {
+      background-image: $btn-primary-bg !important;
+      box-shadow: none !important;
+    }
+  }
+  .collection-cards {
+    margin-top: 30px;
+  }
+}
+
+#artwork {
+  .container {
+    .artwork-cards {
+      margin-top: 30px;
+    }
+  }
+}
+
+#maker {
+  .card {
+    padding: 0;
+  }
+
+  .rounded-circle {
+    width: 100px;
+    transform: translateY(-65px);
+    margin-bottom: -60px;
+  }
+
+  .card-title {
+    margin-bottom: 10px;
+  }
+
+  .card-body {
+    padding: 15px 15px 30px;
+  }
+
+  .btn {
+    border: #671AE4 solid 1px;
+    &:hover {
+      background: transparent;
+      color: #671AE4;
+    }
+  }
+}
+
+#faq {
+  .container {
+    .accordion {
+      margin-top: 50px;
+    }
+    .accordion-button, .accordion-header, .accordion-item {
+      background-color: transparent !important;
+      color: #FFFFFF80;
+      box-shadow: none;
+    }
+    .accordion-header {
+      border-bottom: 0.05px solid #FFFFFF80 !important;
+    }
+    .accordion-button::after {
+      background-image: url(../img/plus.png);
+      background-size: 15px;
+    }
+  }
+}
+
+#nft {
+  .container {
+    .btn {
+      background: rgba(255, 255, 255, 0.5);
+      margin-top: 20px;
+    }
+
+    .nft-box {
+      padding: 50px;
+      background: $btn-primary-bg;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+footer {
+  .container {
+    li {
+      margin-bottom: 20px;
+    }
+    a {
+      color: #FFFFFF80;
+    }
+  }
+  .footer-title {
+    color: white;
+    font-weight: bold;
+  }
+
+  .copy {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #companies {
+    img {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #hero {
+    .container {
+      .hero-left {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  #about {
+    .container {
+      .col-lg-5 {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  footer {
+    text-align: center !important;
+  }
+}
