@@ -119,6 +119,9 @@ header {
     #hero .container .stat .text-white {
       font-size: 30px; }
 
+#companies img {
+  width: 80%; }
+
 #collection .collection-buttons .nav-item {
   padding: 0 7.5px; }
 #collection .collection-buttons .btn {
